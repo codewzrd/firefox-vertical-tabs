@@ -206,3 +206,15 @@
         display: none !important;
     }
 }
+
+/* Hide the bookmarks toolbar and show it when cursor hover's over it */
+#PersonalToolbar {
+    margin-top: -20px !important;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+toolbox[id="navigator-toolbox"]:hover #PersonalToolbar {
+    opacity: 1;
+    margin: 0 !important;
+}
